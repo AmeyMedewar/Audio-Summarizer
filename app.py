@@ -76,7 +76,7 @@ def summarize_with_gemini(text, max_words=150):
     """Summarize text using Gemini API"""
     try:
         model = ChatGoogleGenerativeAI(model="gemini-2.5-flash",
-            google_api_key='AIzaSyD-qPr1BoqvEz1udKPJynVmP9LzHgcg_50')
+            google_api_key='your key here')
         
         prompt = f"""
         Please provide a concise summary of the following transcribed text. 
@@ -370,4 +370,5 @@ def main():
         """)
 
 if __name__ == "__main__":
+
     main()
